@@ -1,0 +1,10 @@
+{% extends "base.html" %} {% block content %}
+<n1>Todo List</n1>
+<u1>
+  {% for todo in todos %}
+  <li>
+    {{todo.title }}: {% if todo.completed %}Completed{% else %}Not <completed>% endif %</completed>
+  </li>
+  {% endfor %}
+</u1>
+{% endblock %}
